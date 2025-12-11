@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: lightgreen;
+        font-family: Arial;
+    }
+
+    fieldset {
+        background-color: honeydew;
+        border: 3px solid seagreen;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    legend {
+        color: darkgreen;
+        font-weight: bold;
+    }
+
+    label {
+        color: forestgreen;
+        font-weight: bold;
+    }
+
+    input, textarea, select {
+        border: 2px solid seagreen;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: seagreen;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: darkgreen;
+    }
+
+    a {
+        color: darkgreen;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: limegreen;
+    }
+</style>
+</head>
+<body>
+<form>
+<fieldset>
+<legend>Member Details</legend>
+
+<label>Full Name</label><br>
+<input type="text" name="fullname" maxlength="30" required><br><br>
+
+<label>Email ID</label><br>
+<input type="email" name="email" required><br><br>
+
+<label>Create Password</label><br>
+<input type="password" name="password" required><br><br>
+
+<label>Contact Number</label><br>
+<input type="number" name="mobile"><br><br>
+</fieldset>
+
+
+<fieldset>
+
+<label>Gender</label><br>
+<input type="radio" name="gender" value="fe"> Female <br>
+<input type="radio" name="gender" value="m"> Male <br>
+<input type="radio" name="gender" value="o"> Others <br><br>
+
+<label>Environmental Interests</label><br>
+<input type="checkbox" name="plants" value="planting"> Tree Planting <br>
+<input type="checkbox" name="recycle" value="recycling"> Recycling Waste <br>
+<input type="checkbox" name="cleaning" value="cleaning"> Clean-Up Activities <br>
+<input type="checkbox" name="awareness" value="awareness"> Spreading Awareness <br><br>
+
+<label>Choose Your Eco Role</label><br>
+<select name="role">
+    <option value="volunteer">Volunteer</option>
+    <option value="activist">Eco Activist</option>
+    <option value="student">Student Ambassador</option>
+    <option value="coordinator">Green Club Coordinator</option>
+</select><br><br>
+
+<label>Your Green Action Plan</label><br>
+<textarea name="plan" rows="10" cols="20" placeholder="Describe how you want to help the environment"></textarea><br><br>
+
+<input type="submit" value="SUBMIT">
+<input type="reset" value="RESET">
+
+</fieldset>
+
+</form>
+
+<a href="D:/HTML/index.html"> greenenvironment.com</a>
+
+</body>
+</html>
